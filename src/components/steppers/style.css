@@ -1,0 +1,70 @@
+.container-steppers {
+  display: flex;
+  font-size: 1rem;
+  padding: 5px 16px;
+  justify-content: space-between;
+}
+
+.container-steppers p {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container-steppers p::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background: #fff;
+  margin-left: 5px;
+}
+
+.container-steppers span {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9acef9;
+}
+
+/* .container-steppers .frist-step {
+} */
+
+.second-step,
+.third-step {
+  color: #808080;
+}
+
+.second-step span,
+.third-step span {
+  background: #808080;
+}
+
+.container-steppers.active-2 .second-step {
+  color: #9acef9;
+}
+
+.container-steppers.active-2 .second-step span {
+  background: #9acef9;
+}
+
+.container-steppers.active-3 .third-step,
+.container-steppers.active-3 .second-step {
+  color: #9acef9;
+}
+
+.container-steppers.active-3 .third-step span,
+.container-steppers.active-3 .second-step span {
+  background: #9acef9;
+}
+
+.third-step::after {
+  display: none;
+}

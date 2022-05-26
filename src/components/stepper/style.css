@@ -1,0 +1,56 @@
+.container-stepper {
+  width: 850px;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 0 20px 5px black;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-stepper > p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 5px 16px;
+}
+
+.container-btn button {
+  padding: 5px 16px;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: rgb(140, 194, 243);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: scale 0.2s ease-in-out;
+}
+
+.container-btn button:hover {
+  color: rgb(199, 221, 241);
+  background: #0005;
+  transform: scale(0.98);
+}
+
+.container-btn button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.container-btn button:disabled:hover {
+  color: rgb(140, 194, 243);
+  background: none;
+  transform: none;
+}
+
+.disabled {
+  opacity: 0;
+  pointer-events: none;
+  cursor: initial;
+}
