@@ -1,0 +1,33 @@
+.container-home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #09141f;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 10px;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
